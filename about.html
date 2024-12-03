@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация обо мне">
+    <meta name="keywords" content="о мне, музыка, песни">
+    <meta name="author" content="Ваше имя">
+    <title>Музыка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Музыка</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="music">
+            <h2>Моя музыка</h2>
+            <p>Слушайте мои композиции на популярных музыкальных платформах:</p>
+            <button id="playMusicBtn">Начать воспроизведение</button>
+            <audio id="musicPlayer" controls>
+                <source src="path/to/music.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает воспроизведение звука.
+            </audio>
+        </section>
+
+        <!-- Интеграция с музыкальными платформами -->
+        <section id="platforms">
+            <h3>Моя музыка на платформах:</h3>
+            <ul>
+                <li><a href="https://spotify.com" target="_blank">Spotify</a></li>
+                <li><a href="https://music.yandex.ru" target="_blank">Yandex Music</a></li>
+                <li><a href="https://soundcloud.com" target="_blank">SoundCloud</a></li>
+            </ul>
+        </section>
+
+        <!-- Тексты песен -->
+        <section id="lyrics">
+            <h3>Тексты песен</h3>
+            <p>Текст первой песни:</p>
+            <pre>Текст песни...</pre>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Все права защищены.</p>
+    </footer>
+    <script>
+        // Воспроизведение музыки
+        const playMusicBtn = document.getElementById('playMusicBtn');
+        const musicPlayer = document.getElementById('musicPlayer');
+
+        playMusicBtn.addEventListener('click', () => {
+            musicPlayer.play();
+        });
+    </script>
+</body>
+</html>
